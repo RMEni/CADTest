@@ -1,3 +1,4 @@
+/* Body */
 body {
   font-family: Arial, sans-serif;
   background-color: #f5f5f5;
@@ -6,6 +7,7 @@ body {
   padding: 0;
 }
 
+/* Header */
 header {
   padding: 20px 0;
 }
@@ -15,6 +17,7 @@ header img {
   height: auto;
 }
 
+/* Login Container */
 .login-container {
   background-color: white;
   border: 1px solid #ccc;
@@ -22,35 +25,51 @@ header img {
   margin-top: 50px;
   padding: 20px;
   text-align: left;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
 }
 
+/* Login Title */
 .login-container h2 {
   text-align: center;
   margin-bottom: 20px;
 }
 
+/* Labels */
 label {
   display: block;
   margin-top: 10px;
 }
 
+/* Input Fields */
 input[type="text"], input[type="password"] {
   width: 100%;
   padding: 5px;
   margin-top: 5px;
   border: 1px solid #ccc;
+  box-sizing: border-box;
 }
 
+/* Login Button */
 input[type="submit"] {
-  margin-top: 15px;
-  width: 100%;
-  padding: 10px;
-  background-color: #EEEEEE;
+  display: block;
+  margin: 20px auto 0 auto; /* center horizontally */
+  width: 120px;              /* smaller width */
+  padding: 8px 0;            /* smaller height */
+  background-color: #808080; /* grey */
   color: white;
   border: none;
+  border-radius: 8px;        /* rounded edges */
   cursor: pointer;
+  font-weight: bold;
 }
 
 input[type="submit"]:hover {
-  background-color: #E0E0E0;
+  background-color: #696969; /* darker grey on hover */
+}
+
+/* Error Message */
+.error {
+  color: red;
+  margin-top: 10px;
+  text-align: center;
 }
