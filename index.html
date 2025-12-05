@@ -1,20 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Login</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Retro Login Page</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <header>
+    <img src="images/logo.png" alt="Retro Logo">
+  </header>
 
-    <div class="login-container">
-        <h1>RIFMDT</h1>
+  <div class="login-container">
+    <h2>Login</h2>
+    <form id="loginForm">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
 
-        <input type="text" id="username" placeholder="Username">
-        <input type="password" id="password" placeholder="Password">
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
 
-        <button onclick="login()">Login</button>
-    </div>
+      <input type="submit" value="Login">
+      <div class="error" id="errorMsg"></div>
+    </form>
+  </div>
 
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
